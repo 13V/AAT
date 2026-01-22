@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Adelaide Affordable Trailers - Professional waste removal from $300. General waste, green waste, yard cleans, furniture removal. Call 0422 529 662 for instant quote.">
+    <title>Adelaide Affordable Trailers | Waste Removal from $300</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>ADELAIDE<br><span class="highlight">AFFORDABLE TRAILERS</span></h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#services">Services</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+                <li><a href="#why-us">Why Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="tel:0422529662" class="btn btn-primary">📞 0422 529 662</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-badge">✓ Licensed & Insured</div>
+                <h2 class="hero-title">ADELAIDE'S MOST<br><span class="highlight">AFFORDABLE</span> WASTE REMOVAL</h2>
+                <p class="hero-subtitle">Professional trailer hire & waste removal services</p>
+                <div class="hero-price">
+                    <div class="price-tag">
+                        <span class="from">FROM</span>
+                        <span class="amount">$300</span>
+                    </div>
+                </div>
+                <div class="hero-cta">
+                    <a href="tel:0422529662" class="btn btn-primary btn-large">📞 Call Now</a>
+                    <a href="#quote" class="btn btn-secondary btn-large">Get Instant Quote</a>
+                </div>
+                <div class="trust-badges">
+                    <div class="badge-item">✓ Same Day Service</div>
+                    <div class="badge-item">✓ No Hidden Fees</div>
+                    <div class="badge-item">✓ Eco-Friendly</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Quote Calculator -->
+    <section id="quote" class="quote-calculator">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Instant Estimate</span>
+                <h2 class="section-title">CALCULATE YOUR PRICE</h2>
+                <p class="section-subtitle">Get an instant quote for your waste removal needs</p>
+            </div>
+
+            <div class="calculator-card">
+                <div class="calculator-form">
+                    <div class="form-group">
+                        <label>Waste Type</label>
+                        <select id="wasteType" class="form-control">
+                            <option value="general">General Waste</option>
+                            <option value="green">Green Waste (100%)</option>
+                            <option value="solid">Solid Waste Only</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group" id="trailerSizeGroup">
+                        <label>Trailer Size</label>
+                        <select id="trailerSize" class="form-control">
+                            <option value="4m3">4m³ Trailer</option>
+                            <option value="7m3">7m³ Trailer</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Spring Mattresses</label>
+                        <input type="number" id="mattresses" class="form-control" min="0" value="0" placeholder="0">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Tyres (off rim)</label>
+                        <input type="number" id="tyresOff" class="form-control" min="0" value="0" placeholder="0">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Tyres (on rim)</label>
+                        <input type="number" id="tyresOn" class="form-control" min="0" value="0" placeholder="0">
+                    </div>
+                </div>
+
+                <div class="calculator-result">
+                    <div class="result-breakdown" id="breakdown">
+                        <div class="breakdown-item">
+                            <span>Base Price:</span>
+                            <span id="basePrice">$300</span>
+                        </div>
+                        <div class="breakdown-item" id="mattressLine" style="display: none;">
+                            <span>Mattresses:</span>
+                            <span id="mattressPrice">$0</span>
+                        </div>
+                        <div class="breakdown-item" id="tyresOffLine" style="display: none;">
+                            <span>Tyres (off rim):</span>
+                            <span id="tyresOffPrice">$0</span>
+                        </div>
+                        <div class="breakdown-item" id="tyresOnLine" style="display: none;">
+                            <span>Tyres (on rim):</span>
+                            <span id="tyresOnPrice">$0</span>
+                        </div>
+                    </div>
+                    <div class="total-price">
+                        <span class="total-label">ESTIMATED TOTAL</span>
+                        <span class="total-amount" id="totalPrice">$300</span>
+                    </div>
+                    <a href="tel:0422529662" class="btn btn-primary btn-large btn-block">Book Now - 0422 529 662</a>
+                    <p class="disclaimer">*Prices from August 2025. Extra charges may apply for out of area travel.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">What We Do</span>
+                <h2 class="section-title">OUR SERVICES</h2>
+                <p class="section-subtitle">Professional waste removal and trailer hire across Adelaide</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🗑️</div>
+                    <h3>General Waste</h3>
+                    <p>Household rubbish, furniture, appliances, and general waste removal with flexible trailer sizes.
+                    </p>
+                    <ul class="service-features">
+                        <li>✓ 4m³ or 7m³ trailers</li>
+                        <li>✓ First ½-1 ton included</li>
+                        <li>✓ Same day service available</li>
+                    </ul>
+                    <div class="service-price">From $350</div>
+                </div>
+
+                <div class="service-card featured">
+                    <div class="featured-badge">MOST POPULAR</div>
+                    <div class="service-icon">🌿</div>
+                    <h3>Green Waste</h3>
+                    <p>100% green waste removal - branches, grass clippings, leaves, and garden debris. Eco-friendly
+                        disposal.</p>
+                    <ul class="service-features">
+                        <li>✓ Up to 7m³ capacity</li>
+                        <li>✓ 100% green waste only</li>
+                        <li>✓ Environmentally responsible</li>
+                    </ul>
+                    <div class="service-price">$300</div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🏡</div>
+                    <h3>Yard Cleans</h3>
+                    <p>Complete yard cleanup services. We'll clear out overgrown areas, remove debris, and leave your
+                        yard spotless.</p>
+                    <ul class="service-features">
+                        <li>✓ Full property cleanup</li>
+                        <li>✓ Overgrown yard clearing</li>
+                        <li>✓ Professional service</li>
+                    </ul>
+                    <div class="service-price">Free Quote</div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🛋️</div>
+                    <h3>Furniture Removal</h3>
+                    <p>Safe removal and disposal of old furniture, mattresses, and large household items.</p>
+                    <ul class="service-features">
+                        <li>✓ Sofas, beds, tables</li>
+                        <li>✓ Appliance removal</li>
+                        <li>✓ Recycling where possible</li>
+                    </ul>
+                    <div class="service-price">From $300</div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🏠</div>
+                    <h3>Deceased Estates</h3>
+                    <p>Respectful and professional estate clearance services. We handle the entire process with care.
+                    </p>
+                    <ul class="service-features">
+                        <li>✓ Full property clearance</li>
+                        <li>✓ Sensitive handling</li>
+                        <li>✓ Donation coordination</li>
+                    </ul>
+                    <div class="service-price">Free Quote</div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">♻️</div>
+                    <h3>Solid Waste</h3>
+                    <p>2-ton solid waste only loads. Perfect for construction debris, soil, and heavy materials.</p>
+                    <ul class="service-features">
+                        <li>✓ 2 ton capacity</li>
+                        <li>✓ Solid waste only</li>
+                        <li>✓ Construction debris</li>
+                    </ul>
+                    <div class="service-price">$300</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Transparent Pricing</span>
+                <h2 class="section-title">PRICE LIST</h2>
+                <p class="section-subtitle">No hidden fees - what you see is what you pay</p>
+            </div>
+
+            <div class="pricing-tables">
+                <div class="pricing-table">
+                    <h3>General Waste</h3>
+                    <div class="price-item">
+                        <span>4m³ Trailer</span>
+                        <span class="price">$350</span>
+                    </div>
+                    <p class="price-note">First ½ ton included</p>
+                    <div class="price-item">
+                        <span>7m³ Trailer</span>
+                        <span class="price">$480</span>
+                    </div>
+                    <p class="price-note">First 1 ton included</p>
+                </div>
+
+                <div class="pricing-table highlight">
+                    <h3>Green Waste</h3>
+                    <div class="price-item">
+                        <span>Up to 7m³ (100% green)</span>
+                        <span class="price">$300</span>
+                    </div>
+                    <p class="price-note">No perma-pine please</p>
+                    <div class="price-item">
+                        <span>2 ton solid waste only</span>
+                        <span class="price">$300</span>
+                    </div>
+                </div>
+
+                <div class="pricing-table">
+                    <h3>Additional Items</h3>
+                    <div class="price-item">
+                        <span>Spring Mattresses</span>
+                        <span class="price">+$160 each</span>
+                    </div>
+                    <div class="price-item">
+                        <span>Tyres (off rim)</span>
+                        <span class="price">$30 each</span>
+                    </div>
+                    <div class="price-item">
+                        <span>Tyres (on rim)</span>
+                        <span class="price">$50 each</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pricing-note">
+                <p>* Prices from August 2025. Extra charges may apply for out of area travel. Loads are weighed and
+                    overload accounts will be forwarded promptly. Once collected, contents of trailer are the property
+                    of Adelaide Affordable Trailers. Where possible items will be salvaged, reused or recycled.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section id="why-us" class="why-us">
+        <div class="container">
+            <div class="why-us-content">
+                <div class="why-us-image">
+                    <img src="yard-cleanup.png" alt="Before and after yard cleanup">
+                </div>
+                <div class="why-us-text">
+                    <span class="section-badge">Why Choose Us</span>
+                    <h2>ADELAIDE'S TRUSTED WASTE REMOVAL EXPERTS</h2>
+                    <p class="lead">We're committed to providing affordable, professional waste removal services across
+                        Adelaide.</p>
+
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <div class="feature-icon">💰</div>
+                            <div class="feature-content">
+                                <h4>Affordable Pricing</h4>
+                                <p>Competitive rates with no hidden fees. From just $300.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">⚡</div>
+                            <div class="feature-content">
+                                <h4>Same Day Service</h4>
+                                <p>Need it gone today? We offer same day service when available.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">♻️</div>
+                            <div class="feature-content">
+                                <h4>Eco-Friendly</h4>
+                                <p>We salvage, reuse, and recycle wherever possible.</p>
+                            </div>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">✓</div>
+                            <div class="feature-content">
+                                <h4>Licensed & Insured</h4>
+                                <p>Fully licensed and insured for your peace of mind.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="tel:0422529662" class="btn btn-primary btn-large">Call 0422 529 662</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Get In Touch</span>
+                <h2 class="section-title">BOOK YOUR SERVICE</h2>
+                <p class="section-subtitle">Call now or fill out the form for a free quote</p>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">📞</div>
+                        <h3>Phone</h3>
+                        <p class="contact-highlight"><a href="tel:0422529662">0422 529 662</a></p>
+                        <p>Call for instant quotes and bookings</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <h3>Service Area</h3>
+                        <p class="contact-highlight">Adelaide Metro</p>
+                        <p>Servicing all Adelaide suburbs</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">⏰</div>
+                        <h3>Hours</h3>
+                        <p class="contact-highlight">7 Days</p>
+                        <p>Same day service available</p>
+                    </div>
+
+                    <div class="contact-card social">
+                        <div class="contact-icon">📘</div>
+                        <h3>Follow Us</h3>
+                        <p><a href="#" class="social-link">Facebook</a></p>
+                        <p>Stay updated with our latest offers</p>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm">
+                    <h3>Request a Free Quote</h3>
+                    <input type="text" name="name" placeholder="Your Name *" required>
+                    <input type="tel" name="phone" placeholder="Phone Number *" required>
+                    <input type="email" name="email" placeholder="Email Address">
+                    <input type="text" name="suburb" placeholder="Suburb *" required>
+                    <select name="service" required>
+                        <option value="">Select Service *</option>
+                        <option value="general">General Waste</option>
+                        <option value="green">Green Waste</option>
+                        <option value="yard">Yard Clean</option>
+                        <option value="furniture">Furniture Removal</option>
+                        <option value="estate">Deceased Estate</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <textarea name="message" placeholder="Tell us about your requirements" rows="4"></textarea>
+                    <button type="submit" class="btn btn-primary btn-large btn-block">Get Free Quote</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>ADELAIDE<br><span class="highlight">AFFORDABLE TRAILERS</span></h3>
+                    <p>Professional waste removal services across Adelaide</p>
+                    <a href="tel:0422529662" class="footer-phone">📞 0422 529 662</a>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <a href="#services">General Waste</a>
+                        <a href="#services">Green Waste</a>
+                        <a href="#services">Yard Cleans</a>
+                        <a href="#services">Furniture Removal</a>
+                        <a href="#services">Deceased Estates</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <a href="#quote">Get Quote</a>
+                        <a href="#pricing">Pricing</a>
+                        <a href="#why-us">Why Us</a>
+                        <a href="#contact">Contact</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Service Areas</h4>
+                        <p>Adelaide Metro</p>
+                        <p>Northern Suburbs</p>
+                        <p>Southern Suburbs</p>
+                        <p>Eastern Suburbs</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Adelaide Affordable Trailers. All rights reserved.</p>
+                <p>Licensed & Insured | ABN: [To be added]</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Phone Button (Mobile) -->
+    <a href="tel:0422529662" class="floating-phone" id="floatingPhone">
+        📞
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
